@@ -52,6 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['user'] = 'user/UserController';
 $route['add-user'] = 'user/UserController/addUser';
+$route['create-user'] = 'user/UserController/createUser';
 $route['user-list'] = 'user/UserController/add';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

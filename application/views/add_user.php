@@ -44,7 +44,21 @@
         <div class="headline">
             <h3>Add User</h3>
         </div>
-        <input type="text">
+        <form action="http://localhost/test/index.php/create-user" method="POST">
+            <input type="text" placeholder="Username" name="username">
+            <br>
+            <br>
+            <input type="text" placeholder="Email" name="email">
+            <br>
+            <br>
+            <input type="password" placeholder="Password" name="password">
+            <br>
+            <br>
+            <input type="password" placeholder="Retype Password" name="re-password">
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
     </div>
     <div class="footer">
 

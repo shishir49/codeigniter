@@ -28,4 +28,13 @@ class UserController extends CI_Controller {
 	{
 		$this->load->view('add_user');
 	}
+
+	public function createUser()
+	{
+		$this->User->insertUser([
+			'username'  => $_POST['username'],
+			'email'     => $_POST['email'],
+			'password'  => $_POST['password']
+		]);
+	}
 }
